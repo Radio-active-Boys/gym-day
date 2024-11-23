@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'membership',
     'payments',
     'workout',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
