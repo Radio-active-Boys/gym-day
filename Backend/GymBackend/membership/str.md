@@ -23,3 +23,58 @@ Your code looks well-structured and should generate meaningful and unique IDs fo
 ### Additional Notes:
 - The **`save()`** method in each model ensures that these IDs are automatically generated when the object is saved to the database, so you don't have to manually set the ID each time you create a new object.
 - The IDs are based on logical and meaningful components, making them easy to understand and traceable.
+
+
+
+
+
+### 1. **MembershipType POST Request**
+**Endpoint**: `/membership-types/`  
+**Sample JSON**:
+```json
+{
+    "membership_type_id": "MT-012-1000",
+    "duration": 12,
+    "cost": 1000.00
+}
+```
+
+
+
+### 2. **Member POST Request**
+**Endpoint**: `/members/`  
+**Sample JSON**:
+```json
+{
+    "first_name": "John",
+    "last_name": "Doe",
+    "date_of_joining": "2024-11-24",
+    "email": "johndoe@example.com",
+    "address": "123 Main Street, City, Country",
+    "phone": "+1234567890",
+    "membership_type": "MT-012-1000"
+}
+```
+
+---
+
+### 3. **Attendance POST Request**
+**Endpoint**: `/attendance/`  
+**Sample JSON**:
+```json
+{
+    "member": "DOE-2024-001",
+    "date": "2024-11-24",
+    "check_in_time": "09:00:00",
+    "check_out_time": "17:00:00"
+}
+```
+
+---
+
+### Notes:
+1. **`membership_type_id`** in `MembershipType` should match the primary key or ID format expected.
+2. **`membership_type`** in `Member` should be a valid `membership_type_id` from the `MembershipType` table.
+3. **`member`** in `Attendance` should be a valid `member_id` from the `Member` table.
+4. Ensure the `date_of_joining` and `date` fields follow the `YYYY-MM-DD` format.
+5. Time fields like `check_in_time` and `check_out_time` must follow the `HH:MM:SS` format.

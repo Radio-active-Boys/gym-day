@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram name="Page-1" id="PiudxcxY21ZuL0DZgnnW">
-        <mxGraphModel dx="2368" dy="1762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="3000" dy="2038" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -10,16 +10,16 @@
                 <mxCell id="1UJyBjq5cVFDZRbIYlk_-6" value="&lt;font color=&quot;#3f3131&quot;&gt;Member&lt;/font&gt;" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;align=center;fillColor=#00FF00;strokeColor=#000000;" parent="1" vertex="1">
                     <mxGeometry x="295" y="40" width="100" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="1UJyBjq5cVFDZRbIYlk_-7" value="Trainer" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;align=center;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+                <mxCell id="1UJyBjq5cVFDZRbIYlk_-7" value="Trainer" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;align=center;fillColor=#33FF33;strokeColor=#b85450;" parent="1" vertex="1">
                     <mxGeometry x="-240" y="660" width="100" height="40" as="geometry"/>
                 </mxCell>
                 <mxCell id="1UJyBjq5cVFDZRbIYlk_-8" value="Payment&lt;span style=&quot;color: rgba(0, 0, 0, 0); font-family: monospace; font-size: 0px; text-align: start; text-wrap: nowrap;&quot;&gt;%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22Member%22%20style%3D%22rounded%3D1%3BarcSize%3D10%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3Balign%3Dcenter%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22350%22%20y%3D%22200%22%20width%3D%22100%22%20height%3D%2240%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&lt;/span&gt;" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;align=center;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
                     <mxGeometry x="-92.5" y="-120" width="100" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="1UJyBjq5cVFDZRbIYlk_-9" value="Workout Plan" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;align=center;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+                <mxCell id="1UJyBjq5cVFDZRbIYlk_-9" value="Workout Plan" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;align=center;fillColor=#33FF33;strokeColor=#b85450;" parent="1" vertex="1">
                     <mxGeometry x="570" y="540" width="100" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="1UJyBjq5cVFDZRbIYlk_-10" value="Workout" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;align=center;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+                <mxCell id="1UJyBjq5cVFDZRbIYlk_-10" value="Workout" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;align=center;fillColor=#00FF00;strokeColor=#b85450;" parent="1" vertex="1">
                     <mxGeometry x="750" y="840" width="100" height="40" as="geometry"/>
                 </mxCell>
                 <mxCell id="1UJyBjq5cVFDZRbIYlk_-11" value="Membership Type" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;align=center;fillColor=#33FF33;strokeColor=#b85450;" parent="1" vertex="1">
@@ -31,7 +31,7 @@
                 <mxCell id="1UJyBjq5cVFDZRbIYlk_-14" value="Attendence" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;align=center;fillColor=#33FF33;strokeColor=#b85450;" parent="1" vertex="1">
                     <mxGeometry x="760" y="100" width="100" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="1UJyBjq5cVFDZRbIYlk_-15" value="Trainer Schedule" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;align=center;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+                <mxCell id="1UJyBjq5cVFDZRbIYlk_-15" value="Trainer Schedule" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;align=center;fillColor=#00CC00;strokeColor=#b85450;" parent="1" vertex="1">
                     <mxGeometry x="-240" y="930" width="100" height="40" as="geometry"/>
                 </mxCell>
                 <mxCell id="v6D-0U67AB6QKfAhoeiV-9" value="belongs" style="rhombus;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">

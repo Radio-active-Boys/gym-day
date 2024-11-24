@@ -1,9 +1,30 @@
 from django.urls import path
-from . import views
+from .views import (
+    TrainerList,
+    TrainerDetail,
+    WorkoutPlanList,
+    WorkoutPlanDetail,
+    WorkoutList,
+    WorkoutDetail,
+    TrainerScheduleList,
+    TrainerScheduleDetail,
+)
 
 urlpatterns = [
-    path('trainers/', views.admin_list, name='trainer_list'),  # Example: List of trainers
-    path('workout-plans/', views.admin_list, name='workout_plan_list'),  # Example: List of workout plans
-    path('workouts/', views.admin_list, name='workout_list'),  # Example: List of workouts
-    path('trainer-schedules/', views.admin_list, name='trainer_schedule_list'),  # Example: List of trainer schedules
+
+    # Trainers
+    path('trainers/', TrainerList.as_view(), name='trainer_list'),
+    path('trainers/<str:pk>/', TrainerDetail.as_view(), name='trainer_detail'),
+
+    # Workout Plans
+    path('workout-plans/', WorkoutPlanList.as_view(), name='workout_plan_list'),
+    path('workout-plans/<str:pk>/', WorkoutPlanDetail.as_view(), name='workout_plan_detail'),
+
+    # Workouts
+    path('workouts/', WorkoutList.as_view(), name='workout_list'),
+    path('workouts/<str:pk>/', WorkoutDetail.as_view(), name='workout_detail'),
+
+    # Trainer Schedules
+    path('trainer-schedules/', TrainerScheduleList.as_view(), name='trainer_schedule_list'),
+    path('trainer-schedules/<str:pk>/', TrainerScheduleDetail.as_view(), name='trainer_schedule_detail'),
 ]
