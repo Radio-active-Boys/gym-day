@@ -24,5 +24,5 @@ urlpatterns = [
     path('payments/', include('payments.urls')),
     path('workout/', include('workout.urls')),
     path('bank', include('bank.urls')),
-    path('auth/', include('auth.urls')),
+    path('custom_auth/', include('custom_auth.urls')),
 ]
