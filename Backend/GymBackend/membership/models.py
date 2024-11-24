@@ -29,3 +29,6 @@ class Attendance(models.Model):
 
     def __str__(self):
         return f"Attendance for {self.member.first_name} on {self.date}"
+
+
+

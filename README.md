@@ -26,5 +26,8 @@ py manage.py startapp <app_you_want>
 py manage.py migrate
 py manage.py makemigrations
 
+# add user
+python manage.py createsuperuser
+
 # run backend
 py manage.py runserver
