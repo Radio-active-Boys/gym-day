@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'workout',
     'rest_framework',
     'bank',
+    'auth',
 ]
 
 MIDDLEWARE = [
