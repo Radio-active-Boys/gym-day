@@ -19,6 +19,10 @@ py -m pip install -r requirements.txt
 
 cd GymBackend
 
+# dbms
+CREATE DATABASE gym_django
+    DEFAULT CHARACTER SET = 'utf8mb4';
+
 # setup mysql root db_name passwd host in setting.py
 py manage.py startapp <app_you_want>
 

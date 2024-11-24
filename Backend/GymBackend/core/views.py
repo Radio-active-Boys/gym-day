@@ -21,7 +21,7 @@ class AdminList(APIView):
 class AdminDetail(APIView):
     def get(self, request, pk):
         try:
-            admin = Admin.objects.get(pk=pk)
+            admin = Admin.objects.get(admin_id=pk)
         except Admin.DoesNotExist:
             return Response({"error": "Admin not found"}, status=status.HTTP_404_NOT_FOUND)
         serializer = AdminSerializer(admin)
@@ -29,7 +29,7 @@ class AdminDetail(APIView):
 
     def put(self, request, pk):
         try:
-            admin = Admin.objects.get(pk=pk)
+            admin = Admin.objects.get(admin_id=pk)
         except Admin.DoesNotExist:
             return Response({"error": "Admin not found"}, status=status.HTTP_404_NOT_FOUND)
         serializer = AdminSerializer(admin, data=request.data)
@@ -40,7 +40,7 @@ class AdminDetail(APIView):
 
     def delete(self, request, pk):
         try:
-            admin = Admin.objects.get(pk=pk)
+            admin = Admin.objects.get(admin_id=pk)
         except Admin.DoesNotExist:
             return Response({"error": "Admin not found"}, status=status.HTTP_404_NOT_FOUND)
         admin.delete()
@@ -63,7 +63,7 @@ class EquipmentList(APIView):
 class EquipmentDetail(APIView):
     def get(self, request, pk):
         try:
-            equipment = Equipment.objects.get(pk=pk)
+            equipment = Equipment.objects.get(equipment_id=pk)
         except Equipment.DoesNotExist:
             return Response({"error": "Equipment not found"}, status=status.HTTP_404_NOT_FOUND)
         serializer = EquipmentSerializer(equipment)
@@ -71,7 +71,7 @@ class EquipmentDetail(APIView):
 
     def put(self, request, pk):
         try:
-            equipment = Equipment.objects.get(pk=pk)
+            equipment = Equipment.objects.get(equipment_id=pk)
         except Equipment.DoesNotExist:
             return Response({"error": "Equipment not found"}, status=status.HTTP_404_NOT_FOUND)
         serializer = EquipmentSerializer(equipment, data=request.data)
@@ -82,7 +82,7 @@ class EquipmentDetail(APIView):
 
     def delete(self, request, pk):
         try:
-            equipment = Equipment.objects.get(pk=pk)
+            equipment = Equipment.objects.get(equipment_id=pk)
         except Equipment.DoesNotExist:
             return Response({"error": "Equipment not found"}, status=status.HTTP_404_NOT_FOUND)
         equipment.delete()
@@ -106,7 +106,7 @@ class MaintenanceList(APIView):
 class MaintenanceDetail(APIView):
     def get(self, request, pk):
         try:
-            maintenance = Maintenance.objects.get(pk=pk)
+            maintenance = Maintenance.objects.get(maintenance_id=pk)
         except Maintenance.DoesNotExist:
             return Response({"error": "Maintenance not found"}, status=status.HTTP_404_NOT_FOUND)
         serializer = MaintenanceSerializer(maintenance)
@@ -114,7 +114,7 @@ class MaintenanceDetail(APIView):
 
     def put(self, request, pk):
         try:
-            maintenance = Maintenance.objects.get(pk=pk)
+            maintenance = Maintenance.objects.get(maintenance_id=pk)
         except Maintenance.DoesNotExist:
             return Response({"error": "Maintenance not found"}, status=status.HTTP_404_NOT_FOUND)
         serializer = MaintenanceSerializer(maintenance, data=request.data)
@@ -125,7 +125,7 @@ class MaintenanceDetail(APIView):
 
     def delete(self, request, pk):
         try:
-            maintenance = Maintenance.objects.get(pk=pk)
+            maintenance = Maintenance.objects.get(maintenance_id=pk)
         except Maintenance.DoesNotExist:
             return Response({"error": "Maintenance not found"}, status=status.HTTP_404_NOT_FOUND)
         maintenance.delete()

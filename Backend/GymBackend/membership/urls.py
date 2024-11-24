@@ -1,8 +1,11 @@
 from django.urls import path
-from . import views
+from .views import MemberList,MemberDetail,MembershipTypeList,MembershipTypeDetail,AttendanceDetail,AttendanceList
 
 urlpatterns = [
-    path('members/', views.member_list, name='member_list'),  # Example: List of members
-    path('attendance/', views.member_list, name='member_list'),  # Example: List of attendance records
-    path('membership-types/', views.member_list, name='member_list'),  # Example: List of membership types
+    path('members/', MemberList.as_view(), name='member_list'),
+    path('members/<str:pk>/', MemberDetail.as_view(), name='member_detail'),
+    path('membership-types/', MembershipTypeList.as_view(), name='membership_type_list'),
+    path('membership-types/<str:pk>/', MembershipTypeDetail.as_view(), name='membership_type_detail'),
+    path('attendance/', AttendanceList.as_view(), name='attendance_list'),
+    path('attendance/<str:pk>/', AttendanceDetail.as_view(), name='attendance_detail'),
 ]
